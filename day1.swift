@@ -46,6 +46,7 @@ var pi = 3.141
 // Boolean
 var awesome = true
 
+
 //  5. String interpolation
 
 // interpolation = the ability to place variables/run codes inside your string
@@ -53,10 +54,12 @@ var score = 85
 var str3 = "Your score was \(score)"
 var results = "The test results are here: \(str3)"
 
+
 //  6. Constants
 
 // to set a value once, and never change it. When you use constants, you cannot change something by accident
 let taylor = "swift"
+
 
 //  7. Type annotations
 
