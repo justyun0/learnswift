@@ -1,14 +1,14 @@
 # 1. Arrays
 
 collections of values that are stored as a single value.
-```
+``` Swift
 let john = "John Lennon"
 let paul = "Paul McCartney"
 let george = "George Harrison"
 let ringo = "Ringo Starr"
 
 let beatles = [john, paul, george, ringo]
-```
+```Swift
 read values from an array: to read "Paul McCartney"
 beatles[1]
 
@@ -18,7 +18,7 @@ beatles[1]
 1.  Items aren’t stored in any order
 2.  All items must be unique.
 
-```
+```Swift
 let colors = Set(["red", "green", "blue"])
 ```
 
@@ -31,7 +31,7 @@ If you try to insert a duplicate item into a set, the duplicates get ignored.
 1. They are fixed in size.
 2. You cannot change the types of values.
 3. You can access items in a tuple using numerical positions or by naming them
-```
+```Swift
 var name = (first: "Taylor", last: "Swift")
 
 name.0
@@ -49,7 +49,7 @@ name.first
 
 ## differences between Arrays and Dictionaries
 1. Rather than storing things with an integer position you can access them using anything you want.
-```
+```Swift
 let heights = [
     "Taylor Swift": 1.78,
     "Ed Sheeran": 1.73
@@ -57,7 +57,7 @@ let heights = [
 ```
 You can use identifiers to read data back out of the dictionary
 
-```
+```Swift
 heights["Taylor Swift"]
 ```
 
@@ -66,7 +66,7 @@ heights["Taylor Swift"]
 If you try to read a value from a dictionary using a key that doesn’t exist, Swift will send you back nil
 
 We can provide the dictionary with a default value to use if we request a missing key.
- ```
+ ```Swift
  favoriteIceCream["Charlotte", default: "Unknown"]
  ```
  
@@ -75,21 +75,21 @@ We can provide the dictionary with a default value to use if we request a missin
  # 7. Creating empty collections
  
  ## Empty dictionary 
- ```
+ ```Swift
  var teams = [String: String]()
  ```
  to add entries later on:
- ```
+ ```Swift
  teams["Paul"] = "Red"
  ```
  
  ## Empty array
- ```
+ ```Swift
  var results = [Int]()
  ```
  
  ## Empty set
- ```
+ ```Swift
  var words = Set<String>()
  var numbers = Set<Int>()
  ```
@@ -99,7 +99,7 @@ We can provide the dictionary with a default value to use if we request a missin
 
 You can define a Result type that can be either success or failure
 
-```
+```Swift
  enum Result {
     case success
     case failure
