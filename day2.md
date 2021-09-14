@@ -41,8 +41,8 @@ name.first
 # 4. Arrays vs Sets vs Tuples
 
 * If you need a specific, fixed collection of related values where each item has a precise position or name - Tuple
-* If you need a collection of values that must be unique or you need to be able to check whether a specific item is in there extremely quickly -> Set
-* If you need a collection of values that can contain duplicates, or the order of your items matters -> Array
+* If you need a collection of values that must be unique or you need to be able to check whether a specific item is in there extremely quickly - Set
+* If you need a collection of values that can contain duplicates, or the order of your items matters - Array
 
 
 # 5. Dictionaries
