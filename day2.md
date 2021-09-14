@@ -94,7 +94,7 @@ We can provide the dictionary with a default value to use if we request a missin
  var numbers = Set<Int>()
  ```
  
- # Enumerations
+ # 8. Enumerations
  A way of defining groups of related values in a way that makes them easier to use.
 
 You can define a Result type that can be either success or failure
@@ -106,4 +106,42 @@ You can define a Result type that can be either success or failure
 }
 
 let result1 = Result.failure
+```
+# 9. Enum associated values
+You can add additional details attatched to each case.
+
+```Swift
+enum Activity {
+    case bored
+    case running(destination: String)
+    case talking(topic: String)
+    case singing(volume: Int)
+}
+
+let talking = Activity.talking(topic: "football")
+```
+
+# 10. Enum raw values
+
+You might create a Planet enum that stores integer values for each of its cases:
+```Swift
+enum Planet: Int {
+    case mercury
+    case venus
+    case earth
+    case mars
+}
+```
+Earth will be given the number 2, so you can write this:
+```Swift
+let earth = Planet(rawValue: 2)
+```
+You can assign one or more cases a specific value
+```Swift
+enum Planet: Int {
+    case mercury = 1
+    case venus
+    case earth
+    case mars
+}
 ```
