@@ -83,7 +83,7 @@ We can provide the dictionary with a default value to use if we request a missin
  teams["Paul"] = "Red"
  ```
  
- ## Empty arry
+ ## Empty array
  ```
  var results = [Int]()
  ```
@@ -94,4 +94,16 @@ We can provide the dictionary with a default value to use if we request a missin
  var numbers = Set<Int>()
  ```
  
- 
+ # Enumerations
+ A way of defining groups of related values in a way that makes them easier to use.
+
+You can define a Result type that can be either success or failure
+
+```
+ enum Result {
+    case success
+    case failure
+}
+
+let result1 = Result.failure
+```
